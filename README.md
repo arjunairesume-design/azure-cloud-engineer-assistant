@@ -78,19 +78,19 @@ https://azure-incident-assistant.vercel.app
 
 ## Home
 
-![Home](screenshots/home.png)
+![Home]screenshots/home.png
 
 ---
 
 ## About
 
-![About](screenshots/about.png)
+![About]screenshots/about.png
 
 ---
 
 ## Loading Screen
 
-![Loading](screenshots/loading.png)
+![Loading]screenshots/loading.png
 
 ---
 
