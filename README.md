@@ -1,76 +1,151 @@
-# Azure Incident Assistant
+# Azure Cloud Engineer Assistant
 
-AI-powered web app for analyzing Azure incidents with structured root cause analysis, KQL queries, and PowerShell remediation steps.
+An AI-powered platform designed to simplify Azure Cloud Operations by assisting engineers with Incident Management, Cloud Operations, Migration, Architecture, Automation and Infrastructure planning.
 
-## Features
+---
 
-- Issue types: AVD, VPN, VM Down, High CPU, Backup Failure, Entra ID Login Issue
-- Structured AI output: RCA, confidence score, investigation steps, KQL, PowerShell, resolution
-- Copy buttons for KQL and PowerShell
-- Responsive Azure-themed UI with loading and error states
+## 🚀 Live Demo
 
-## Tech Stack
+https://azure-incident-assistant.vercel.app
 
-- **Frontend:** React 18, Vite, Tailwind CSS
-- **Backend:** Node.js, Express (local) + Vercel serverless (production)
-- **AI:** OpenAI API
+---
 
-## Quick Start
+## ✨ Current Capability (v1.0)
 
-### 1. Install dependencies
+### AI Incident Management
 
-```bash
-npm run install:all
-```
+- ✅ AI Root Cause Analysis
+- ✅ Confidence Score
+- ✅ Severity Prediction
+- ✅ Investigation Steps
+- ✅ Business Impact Analysis
+- ✅ Recommended Team
+- ✅ Similar Incidents
+- ✅ KQL Query Generation
+- ✅ PowerShell Recommendations
+- ✅ Permanent Fix
+- ✅ Preventive Measures
+- ✅ PDF Export
+- ✅ Google Authentication
 
-### 2. Configure environment
+---
 
-Copy `.env.example` to `.env` in the project root and set your OpenAI API key:
+## 🚀 Upcoming Capabilities
 
-```bash
-cp .env.example .env
-```
+### Azure Migration Assistant
 
-For local development, the server loads `.env` from the project root.
+- Azure Migrate Guidance
+- Azure Site Recovery (ASR)
+- Cross Subscription Migration
+- Cross Tenant Migration
+- Migration Validation
+- Migration Checklist
 
-### 3. Run locally
+### Landing Zone Planning
 
-```bash
-npm run dev
-```
+- CAF Landing Zone
+- Hub & Spoke Design
+- Management Groups
+- Azure Policy
+- RBAC Planning
+- Network Architecture
 
-- Frontend: http://localhost:5173
-- API: http://localhost:3001/api/analyze
+### Infrastructure as Code
 
-## Project Structure
+- Terraform
+- Bicep
+- ARM Templates
+- Azure CLI
+- PowerShell Automation
 
-```
-├── api/                 # Vercel serverless functions
-├── client/              # React + Vite frontend
-├── server/              # Express API (local dev) + shared logic
-├── vercel.json
-└── package.json
-```
+### Solution Architecture
 
-## Deploy to Vercel
+- High Level Design (HLD)
+- Low Level Design (LLD)
+- Azure Best Practices
+- Architecture Recommendations
 
-1. Push the repository to GitHub.
-2. Import the project in [Vercel](https://vercel.com).
-3. Add environment variable: `OPENAI_API_KEY`
-4. Optional: `OPENAI_MODEL` (default: `gpt-4o-mini`)
-5. Deploy — the frontend and `/api/analyze` route are configured automatically.
+### Cost & Governance Advisor
 
-## API
+- Azure Cost Optimization
+- Azure Advisor Recommendations
+- Budget Planning
+- Governance Best Practices
 
-**POST** `/api/analyze`
+---
 
-```json
-{
-  "issueType": "VM Down",
-  "details": "VM my-vm-prod in eastus not responding since 09:00 UTC",
-  "username": "jdoe@contoso.com",
-  "ipAddress": "10.0.1.42"
-}
-```
+# 🖼️ Screenshots
 
-Response includes `rootCauseAnalysis`, `confidenceScore`, `investigationSteps`, `kqlQueries`, `powershellCommands`, and `recommendedResolution`.
+## Home
+
+![Home](screenshots/home.png)
+
+---
+
+## About
+
+![About](screenshots/about.png)
+
+---
+
+## Loading Screen
+
+![Loading](screenshots/loading.png)
+
+---
+
+## 💻 Technology Stack
+
+- Microsoft Azure
+- OpenAI API
+- React
+- Node.js
+- Firebase Authentication
+- Tailwind CSS
+
+---
+
+## 🛣️ Roadmap
+
+| Feature | Status |
+|----------|--------|
+| AI Incident Management | ✅ Completed |
+| Migration Assistant | 🚧 Planned |
+| Landing Zone Planning | 🚧 Planned |
+| Infrastructure as Code | 🚧 Planned |
+| Solution Architecture | 🚧 Planned |
+| Cost & Governance Advisor | 🚧 Planned |
+
+---
+
+## 👨‍💻 Developer
+
+**Nagarjuna Bolla**
+
+Azure Cloud Architect | AI Solution Developer
+
+10+ Years of Experience in Azure Cloud, Infrastructure, Migration, Automation and AI.
+
+---
+
+## 🔗 Connect with Me
+
+**LinkedIn**
+
+https://www.linkedin.com/in/nagarjuna-bolla-b14604104
+
+**GitHub**
+
+https://github.com/arjunairesume-design
+
+---
+
+## ⭐ Support
+
+If you found this project useful, please consider giving it a ⭐ on GitHub.
+
+Feedback, feature requests and contributions are always welcome.
+
+---
+
+Version **1.0** • June 2026
